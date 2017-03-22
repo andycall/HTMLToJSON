@@ -30,7 +30,7 @@ describe("TextElement Test", () => {
             let json = parser.toJSON();
 
             // TODO more test
-            console.log(require('util').inspect(json));
+            console.log(require('util').inspect(json, true, 100));
             // assert.equal(json.items.length, 128);
         });
     })

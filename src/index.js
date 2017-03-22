@@ -37,13 +37,6 @@ class DOMStructor {
                     self.imageKeyIndex.push(self.textElement.length);
                     children.push(node);
                 }
-                // 行内元素有BR换行，要特殊处理
-                else if (nodeName === 'BR') {
-                    children.push('__SEGMENT__');
-                }
-                else if (node.nodeType === 3) {
-                    children.push(node);
-                }
                 else if (node.childNodes.length > 0) {
                     let childNodes = root.childNodes;
                     childNodes.forEach(finder);
@@ -99,11 +92,12 @@ class DOMStructor {
             }
             // 行内元素或者纯文本节点
             else {
-                let text = node.textContent.trim();          
+                let text = node.textContent.trim();
+
                 if (node.nodeType === 1) {
                     let result = this.getAllChildrenDeep(node);
+                    console.log(result);
                     this.textElement.push(result);
-                    return;
                 }
                 else if (text.length === 0) {
                     return;
@@ -157,9 +151,7 @@ class DOMStructor {
                     if (nextNode === '__SEGMENT__') {
                         return total + '__SEGMENT__';
                     }
-                    
-                    console.log(nextNode, nextNode.textContent);
-                    
+
                     let nodeText = nextNode.textContent.trim();
                     return total + nodeText;
                 }, '');
@@ -167,10 +159,12 @@ class DOMStructor {
                 let textNode = text.split('__SEGMENT__');
 
                 textNode.forEach(text => {
-                    ret.items.push({
-                        type: 'text',
-                        data: text
-                    }); 
+                    if (text.length > 0) {
+                        ret.items.push({
+                            type: 'text',
+                            data: text
+                        });
+                    }
                 });
             }
         });
