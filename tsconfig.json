@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "target": "es2015",
+        "outFile": "./output/index.js"
+    },
+    "include": [
+        "./src/index.js"
+    ]
+}

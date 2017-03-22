@@ -1,0 +1,30 @@
+{
+  "name": "html-to-json",
+  "version": "0.1.0",
+  "description": "Flatten your html source, and generate json text data",
+  "main": "output/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./test/main.js",
+    "build": "./node_modules/.bin/tsc",
+    "dev": "./node_modules/.bin/tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andycall/HTMLToJSON.git"
+  },
+  "keywords": [
+    "html",
+    "json"
+  ],
+  "author": "dongtiangche@outlook.com",
+  "license": "MIT",
+  "devDependencies": {
+    "jsdom": "^9.11.0",
+    "mocha": "^3.2.0",
+    "typescript": "^2.2.1"
+  },
+  "dependencies": {}
+}
