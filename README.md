@@ -15,8 +15,8 @@ If we have some html code
         <span>text4</span>
     </span>
     <p>123456<span>78</span>90<br/><span>2333333</span></p>
+    <img width="50" height="50" src="https://avatars3.githubusercontent.com/u/4409743?v=3&s=460"/>
 </div>
-<img src="https://avatars3.githubusercontent.com/u/4409743?v=3&s=460"/>
 wwwww
 <span>12323</span>
 1232323
