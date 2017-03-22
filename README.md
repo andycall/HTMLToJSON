@@ -29,7 +29,7 @@ Without CSS Stylesheets, This code should looking like this:
 
 This Project can help to generate json with data and keep the newline of the text;
 
-```json
+```javascript
 { image_num: 1,
   items:
    [ { type: 'text', data: 'helloworld' },
