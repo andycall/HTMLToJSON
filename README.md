@@ -74,7 +74,7 @@ let document = jsdom(html, {
         ProcessExternalResources: false
     }
 });
-let DOMParser = require('html-to-json');
+let DOMParser = require('htmlflatten');
 let parser = new DOMParser(document.body);
 let json = parser.toJSON();
 
