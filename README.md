@@ -4,7 +4,8 @@ Flatten your html source, and generate json text data
 This Project is still under development
 
 ## Platform
-Browser Or jsdom
+written based on DOM3 API
+so this project can be running in most Browser environment or jsdom.
 
 ## What is Used To be
 If we have some html code
