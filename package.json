@@ -1,5 +1,5 @@
 {
-  "name": "html-to-json",
+  "name": "htmlflatten",
   "version": "0.1.0",
   "description": "Flatten your html source, and generate json text data",
   "main": "output/index.js",
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andycall/HTMLToJSON.git"
+    "url": "git@github.com:andycall/htmlflatten.git"
   },
   "keywords": [
     "html",

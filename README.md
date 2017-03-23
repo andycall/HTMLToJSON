@@ -1,6 +1,8 @@
 # HTMLToJSON
 Flatten your html source, and generate json text data
 
+This Project is still under development
+
 ## Platform
 Browser Or jsdom
 
